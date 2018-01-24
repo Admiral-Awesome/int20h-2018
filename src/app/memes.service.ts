@@ -33,4 +33,8 @@ export class MemesService {
     return this.http.get(this.url +"meme/pair", MemesService.prepareOptions());
   }
 
+  voteMemes(imgObject) {
+    return this.http.post(this.url +"meme/rate", imgObject ,MemesService.prepareOptions());
+  }
+
 }

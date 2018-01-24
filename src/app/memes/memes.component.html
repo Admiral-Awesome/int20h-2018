@@ -1,3 +1,17 @@
-<p>
-  memes works!
-</p>
+<div class="container-fluid">
+  <div class="row ">
+    <div class="col-12 text-center">
+      <h1 class="text-center"> Choose memes!</h1>
+    </div>
+  </div>
+</div>
+<div class="container-fluid" *ngIf="currentImage1">
+  <div class="row">
+    <div class="col-4 offset-md-1 img" (click)="vote(true)">
+      <img [src]="currentImage1.image" alt="" class="src">
+    </div>
+    <div class="col-4 offset-md-1 img" (click)="vote(false)">
+      <img [src]="currentImage1.image" alt="" class="src">
+    </div>
+  </div>
+</div>

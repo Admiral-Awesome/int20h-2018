@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MemesComponent } from './memes/memes.component';
 import { MemesService } from './memes.service';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { MemesService } from './memes.service';
   imports: [
     BrowserModule,
     HttpModule,
+    NgbModule,
     AppRoutingModule
   ],
   providers: [MemesService],
