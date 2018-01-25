@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { MemesComponent } from './memes/memes.component';
 import { MemesService } from './memes.service';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { MemeRateComponent } from './meme-rate/meme-rate.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MemesComponent
+    MemesComponent,
+    MemeRateComponent
   ],
   imports: [
     BrowserModule,

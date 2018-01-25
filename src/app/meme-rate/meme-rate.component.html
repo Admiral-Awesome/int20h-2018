@@ -1,0 +1,32 @@
+<div class="container-fluid">
+  <div class="row ">
+    <div class="col-12 text-center">
+      <h1 class="text-center"> Top ten memes</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-1 offset-md-3">
+      <h3>Num</h3>
+    </div>
+    <div class="col-4 ">
+      <h3>Image</h3>
+    </div>
+    <div class="col-1">
+      <h3>Rating point</h3>
+    </div>
+  </div>
+  <div class="row" *ngFor="let mem of memes;let i = index;">
+    <div class="col-1 offset-md-3">
+      <h1>{{i+1}}.</h1>
+    </div>
+    <div class="col-4  img">
+      <img [src]="mem.image" alt="" class="src img">
+    </div>
+    <div class="col-1">
+      <h1>{{mem.rating}}</h1>
+    </div>
+  </div>
+</div>

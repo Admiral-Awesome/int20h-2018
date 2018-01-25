@@ -21,8 +21,9 @@ export class MemesComponent implements OnInit {
 
   reloadMemes() {
     this.ms.getMemes().subscribe( (response:any) => {
-      [this.currentImage1, this.currentImage2] = [JSON.parse(response._body).memePair[0],JSON.parse(response._body).memePair[0]];
+      [this.currentImage1, this.currentImage2] = [JSON.parse(response._body).memePair[0],JSON.parse(response._body).memePair[1]];
       this.isLoading = true;
+      console.log(this);
     });
   }
 

@@ -37,4 +37,8 @@ export class MemesService {
     return this.http.post(this.url +"meme/rate", imgObject ,MemesService.prepareOptions());
   }
 
+  getTopMemes() {
+    return this.http.get(this.url +"meme/all?p=1&items=10", MemesService.prepareOptions());
+  }
+
 }
